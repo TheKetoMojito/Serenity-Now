@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Serenity Now - Settings</title>
+	<link rel="stylesheet" href="src/bootstrap.min.css" />
+	<script type="text/javascript" src="src/jquery-3.1.1.min.js"></script>
+	<script src="src/bootstrap.min.js"></script>
+	<script src="settings.js"></script>
+	<style>
+		h1,h2,h3,h4,h5 {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		hr {
+			margin-top:0;
+		}
+		#Title {
+			width:100%;
+			text-align: center;
+		}
+		#LargeContainer {
+			min-height: 60%;
+			padding: 20px;
+			border: 1px solid lightgrey;
+			border-radius: 5px;
+			margin-top: 2%;
+			margin-left: 10%;
+			width:80%;
+			text-align: center;
+		}
+		.settings-content {
+			text-align: left;
+		}
+		.settings-tabs {
+			background: #eeeeee;
+			padding-top:5px;
+			border-radius: 5px;
+		}
+		.settings-tab {
+			background: lightblue;
+			border-left: 0.5px solid lightgrey;
+			border-right: 0.5px solid lightgrey;
+			border-top: 1px solid lightgrey;
+			border-radius: 5px 5px 0px 0px;
+			margin-left: 5px;
+			margin-right: 5px;
+			padding-right: 0px;
+		}
+		.settings-tab-link {
+			color:black;
+			border:0 !important;
+			margin-right: 0px !important;
+			background-color: rgb(240,240,240);
+		}
+		#credits {
+			vertical-align: bottom;
+			border:1px solid lightblue;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="Title"><h1>Serenity Now</h1></div>
+	<div id="LargeContainer">
+		<ul class="settings-tabs nav nav-tabs">
+			<!-- <li class="settings-tab active" id="first-tab"><a class="settings-tab-link" data-toggle="tab" href="#home">General</a></li> -->
+			<li class="settings-tab"><a class="settings-tab-link" data-toggle="tab" href="#menu1">Presets</a></li>
+			<li class="settings-tab active"><a class="settings-tab-link" data-toggle="tab" href="#menu2">About</a></li>
+		</ul>
+
+		<div class="tab-content"><!-- 
+			<div id="home" class="settings-content tab-pane fade in active">
+				<p>Hello! Serenity Now is an extension that keeps your sanity in check.</p>
+			</div> -->
+			<div id="menu1" class="settings-content tab-pane fade">
+				<p>Presets:</p>
+			</div>
+			<div id="menu2" class="settings-content tab-pane fade in active">
+				<p><h5>Serenity Now is an extension that keeps your sanity in check. Take control of your internet addiction!</h5></p>
+				<div id="credits">
+					<p>Serenity Now - GitHub</p>
+					<p>Created by Alex Petrovich</p>
+					<p>Last Updated: 19/11/16</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

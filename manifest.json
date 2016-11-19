@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Serenity Now",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "default_icon": "./res/img/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Serenity Now"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [{
+    "js": ["src/jquery-3.1.1.min.js", "popup.js"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+
+}
